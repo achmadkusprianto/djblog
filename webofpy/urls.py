@@ -37,6 +37,6 @@ urlpatterns = [
     path('', include('blog.urls')),   
 ]
 
-
+# setting folder media di root dir
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #lanjutan setting untuk folder media
